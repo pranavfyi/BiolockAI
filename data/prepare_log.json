@@ -1,0 +1,29 @@
+{
+  "01_loaded": 4488,
+  "02_ic50": 4488,
+  "03_exact_relation": 2364,
+  "04_nM": 2346,
+  "05_valid_ic50": 2346,
+  "06_standardised": 2346,
+  "06_invalid_smiles": 0,
+  "07_deduplicated": 1821,
+  "08_labelled": 1275,
+  "08_active": 361,
+  "08_inactive": 914,
+  "08_intermediate_dropped": 546,
+  "08_inadequate_dataset": false,
+  "08_min_class_size": 100,
+  "09_pass_filter": 1034,
+  "09_fail_filter": 241,
+  "09_actives_failing_filter": 71,
+  "09_final_count": 1275,
+  "settings": {
+    "active_threshold_nM": 1000.0,
+    "inactive_threshold_nM": 10000.0,
+    "max_violations": 0,
+    "input_separator": ";",
+    "activity_type": "IC50",
+    "relation": "=",
+    "units": "nM"
+  }
+}

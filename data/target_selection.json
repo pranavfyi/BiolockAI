@@ -1,0 +1,197 @@
+{
+  "chembl_release": "chembl_37",
+  "sources": {
+    "ftp_latest": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/latest",
+    "uniprot_mapping": "chembl_uniprot_mapping.txt",
+    "target_fasta": "chembl_37.fa.gz",
+    "activity_endpoint": "https://www.ebi.ac.uk/chembl/api/data/activity.json",
+    "activity_filters": {
+      "standard_type": "IC50",
+      "standard_units": "nM",
+      "standard_relation": "=",
+      "assay_type": "B"
+    }
+  },
+  "selection_rules": {
+    "organism": "Severe acute respiratory syndrome coronavirus 2",
+    "target_type": "SINGLE PROTEIN",
+    "positive_name_keywords": [
+      "3c-like proteinase",
+      "3c-like protease",
+      "3clpro",
+      "3cl-pro",
+      "main protease",
+      "mpro"
+    ],
+    "excluded_name_keywords": [
+      "plpro",
+      "papain-like",
+      "polyprotein",
+      "replicase",
+      "complex"
+    ],
+    "activity_filters": {
+      "standard_type": "IC50",
+      "standard_units": "nM",
+      "standard_relation": "=",
+      "assay_type": "B"
+    },
+    "tie_break": "largest qualifying IC50 count, then target_chembl_id"
+  },
+  "n_targets_in_dumps": 13209,
+  "n_relevant_inspected": 7,
+  "n_qualifying": 0,
+  "inspected_relevant_targets": [
+    {
+      "target_chembl_id": "CHEMBL1293307",
+      "pref_name": "3C-like protease",
+      "organism": "Infectious bronchitis virus",
+      "target_type": "SINGLE PROTEIN",
+      "accessions": [
+        "Q3Y5H1"
+      ],
+      "sources": [
+        "uniprot_mapping",
+        "target_fasta"
+      ],
+      "qualifies": false,
+      "rejection_reasons": [
+        "organism is not SARS-CoV-2 (Infectious bronchitis virus)"
+      ],
+      "qualifying_ic50_count": null,
+      "ic50_count_error": null
+    },
+    {
+      "target_chembl_id": "CHEMBL3927",
+      "pref_name": "Replicase polyprotein 1a",
+      "organism": "Human SARS coronavirus",
+      "target_type": "SINGLE PROTEIN",
+      "accessions": [
+        "P0C6U8"
+      ],
+      "sources": [
+        "uniprot_mapping",
+        "target_fasta"
+      ],
+      "qualifies": false,
+      "rejection_reasons": [
+        "organism is not SARS-CoV-2 (Human SARS coronavirus)",
+        "organism looks like SARS-CoV/SARS-CoV-1, not SARS-CoV-2",
+        "pref_name does not contain 3C-like proteinase / main protease / Mpro",
+        "pref_name contains an excluded term (PLpro/polyprotein/replicase/complex)"
+      ],
+      "qualifying_ic50_count": null,
+      "ic50_count_error": null
+    },
+    {
+      "target_chembl_id": "CHEMBL4523582",
+      "pref_name": "Replicase polyprotein 1ab",
+      "organism": "Severe acute respiratory syndrome coronavirus 2",
+      "target_type": "SINGLE PROTEIN",
+      "accessions": [
+        "P0DTD1"
+      ],
+      "sources": [
+        "uniprot_mapping",
+        "target_fasta"
+      ],
+      "qualifies": false,
+      "rejection_reasons": [
+        "pref_name does not contain 3C-like proteinase / main protease / Mpro",
+        "pref_name contains an excluded term (PLpro/polyprotein/replicase/complex)"
+      ],
+      "qualifying_ic50_count": null,
+      "ic50_count_error": null
+    },
+    {
+      "target_chembl_id": "CHEMBL4662936",
+      "pref_name": "Spike glycoprotein",
+      "organism": "Severe acute respiratory syndrome coronavirus 2",
+      "target_type": "SINGLE PROTEIN",
+      "accessions": [
+        "P0DTC2"
+      ],
+      "sources": [
+        "uniprot_mapping",
+        "target_fasta"
+      ],
+      "qualifies": false,
+      "rejection_reasons": [
+        "pref_name does not contain 3C-like proteinase / main protease / Mpro"
+      ],
+      "qualifying_ic50_count": null,
+      "ic50_count_error": null
+    },
+    {
+      "target_chembl_id": "CHEMBL5118",
+      "pref_name": "Replicase polyprotein 1ab",
+      "organism": "Human SARS coronavirus",
+      "target_type": "SINGLE PROTEIN",
+      "accessions": [
+        "P0C6X7"
+      ],
+      "sources": [
+        "uniprot_mapping",
+        "target_fasta"
+      ],
+      "qualifies": false,
+      "rejection_reasons": [
+        "organism is not SARS-CoV-2 (Human SARS coronavirus)",
+        "organism looks like SARS-CoV/SARS-CoV-1, not SARS-CoV-2",
+        "pref_name does not contain 3C-like proteinase / main protease / Mpro",
+        "pref_name contains an excluded term (PLpro/polyprotein/replicase/complex)"
+      ],
+      "qualifying_ic50_count": null,
+      "ic50_count_error": null
+    },
+    {
+      "target_chembl_id": "CHEMBL5169223",
+      "pref_name": "Nucleoprotein",
+      "organism": "Severe acute respiratory syndrome coronavirus 2",
+      "target_type": "SINGLE PROTEIN",
+      "accessions": [
+        "P0DTC9"
+      ],
+      "sources": [
+        "uniprot_mapping",
+        "target_fasta"
+      ],
+      "qualifies": false,
+      "rejection_reasons": [
+        "pref_name does not contain 3C-like proteinase / main protease / Mpro"
+      ],
+      "qualifying_ic50_count": null,
+      "ic50_count_error": null
+    },
+    {
+      "target_chembl_id": "CHEMBL6067604",
+      "pref_name": "von Hippel-Lindau disease tumor suppressor-SARS-Cov-2 polyprotein",
+      "organism": "Homo sapiens",
+      "target_type": "PROTEIN-PROTEIN INTERACTION",
+      "accessions": [
+        "P40337",
+        "P0DTD1"
+      ],
+      "sources": [
+        "uniprot_mapping",
+        "target_fasta"
+      ],
+      "qualifies": false,
+      "rejection_reasons": [
+        "organism is not SARS-CoV-2 (Homo sapiens)",
+        "target_type is PROTEIN-PROTEIN INTERACTION, not SINGLE PROTEIN",
+        "pref_name does not contain 3C-like proteinase / main protease / Mpro",
+        "pref_name contains an excluded term (PLpro/polyprotein/replicase/complex)"
+      ],
+      "qualifying_ic50_count": null,
+      "ic50_count_error": null
+    }
+  ],
+  "qualifying_targets": [],
+  "selected_target": null,
+  "rest_api_errors": [],
+  "error": "No ChEMBL target in the official chembl_37 UniProt mapping + target FASTA satisfies the project rules: SARS-CoV-2 organism, SINGLE PROTEIN, pref_name is Mpro/3C-like/main protease, and not PLpro/polyprotein/replicase/complex/SARS-CoV-1. Assay descriptions that mention 3C-like protease are not used as a substitute for target metadata. No target ID was assumed.",
+  "raw_csv_written": false,
+  "records_downloaded": 0,
+  "data_from_chembl": false
+}

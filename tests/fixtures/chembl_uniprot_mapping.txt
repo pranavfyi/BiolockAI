@@ -1,0 +1,5 @@
+# test fixture copied from official mapping layout, not experimental IC50 data
+P0DTD1	CHEMBL4523582	Replicase polyprotein 1ab	SINGLE PROTEIN
+P0C6U8	CHEMBL3927	Replicase polyprotein 1a	SINGLE PROTEIN
+Q3Y5H1	CHEMBL1293307	3C-like protease	SINGLE PROTEIN
+P0DTC2	CHEMBL4662936	Spike glycoprotein	SINGLE PROTEIN
